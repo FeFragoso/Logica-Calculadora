@@ -13,8 +13,10 @@ body {
 
 #visor {
     width: 147px;
+    height: 40px;
 
     padding-right: 5px;
+    padding-top: 5px;
 
     text-align: end;
 
