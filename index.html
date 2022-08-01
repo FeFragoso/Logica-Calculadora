@@ -14,30 +14,40 @@
     </head>
 
     <body>
+        <div id="calculadora">
+            <h1 id="visor"></h1>
 
-        <h1 id="visor"></h1>
+            <table>
+                <tr>
+                    <td><button class="btn" onclick="input('+')">+</button></td>
+                    <td><button class="btn" onclick="input('-')">-</button></td>
+                    <td><button class="btn" onclick="input('*')">x</button></td>
+                    <td><button class="btn" onclick="input('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="input('7')">7</button></td>
+                    <td><button class="btn" onclick="input('8')">8</button></td>
+                    <td><button class="btn" onclick="input('9')">9</button></td>
+                    <td><button class="btn" onclick="excluir()">C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="input('4')">4</button></td>
+                    <td><button class="btn" onclick="input('5')">5</button></td>
+                    <td><button class="btn" onclick="input('6')">6</button></td>
+                    <td><button class="btn" onclick="backspace()">⩤</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="input('1')">1</button></td>
+                    <td><button class="btn" onclick="input('2')">2</button></td>
+                    <td><button class="btn" onclick="input('3')">3</button></td>
+                    <td rowspan="2"><button class="btn" onclick="calcular()" style="height: 160px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" onclick="input('0')" style="width: 160px;">0</button></td>
+                    <td><button class="btn" onclick="input('.')">.</button></td>
+                </tr>
+            </table>
 
-        <button id="btn-calcular" onclick="calcular()">=</button>
-        <button id="btn-backspace" onclick="backspace()">⩤</button>
-        <button id="btn-excluir" onclick="excluir()">C</button>
-        <button id="btn-soma" onclick="input('+')">+</button>
-        <button id="btn-subtracao" onclick="input('-')">-</button>
-        <button id="btn-multiplicacao" onclick="input('*')">x</button>
-        <button id="btn-divisao" onclick="input('/')">÷</button>
-
-        <div id="container-num">
-            <button class="btn-num" onclick="input('7')">7</button>
-            <button class="btn-num" onclick="input('8')">8</button>
-            <button class="btn-num" onclick="input('9')">9</button>
-            <button class="btn-num" onclick="input('4')">4</button>
-            <button class="btn-num" onclick="input('5')">5</button>
-            <button class="btn-num" onclick="input('6')">6</button>
-            <button class="btn-num" onclick="input('1')">1</button>
-            <button class="btn-num" onclick="input('2')">2</button>
-            <button class="btn-num" onclick="input('3')">3</button>
-            <button class="btn-num" onclick="input('0')">0</button>
-            <button class="btn-num" onclick="input('.')">.</button>
         </div>
-        
     </body>
 </html>
