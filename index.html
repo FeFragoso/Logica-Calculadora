@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css"/>
         <script src="script.js"></script>
 
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
         <title>Calculadora</title>
 
     </head>
@@ -17,7 +18,9 @@
         <div id="calculadora">
             <h1 id="visor"></h1>
 
-            <table>
+            <img id="logo" src="assets/favicon.png"/>
+
+            <table id="btns">
                 <tr>
                     <td><button class="btn" onclick="input('+')">+</button></td>
                     <td><button class="btn" onclick="input('-')">-</button></td>
@@ -40,10 +43,10 @@
                     <td><button class="btn" onclick="input('1')">1</button></td>
                     <td><button class="btn" onclick="input('2')">2</button></td>
                     <td><button class="btn" onclick="input('3')">3</button></td>
-                    <td rowspan="2"><button class="btn" onclick="calcular()" style="height: 160px;">=</button></td>
+                    <td rowspan="2"><button class="btn" onclick="calcular()" style="height: 164px;">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="btn" onclick="input('0')" style="width: 160px;">0</button></td>
+                    <td colspan="2"><button class="btn" onclick="input('0')" style="width: 164px;">0</button></td>
                     <td><button class="btn" onclick="input('.')">.</button></td>
                 </tr>
             </table>
