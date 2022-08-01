@@ -10,3 +10,8 @@ function backspace(){
 function excluir(){
     document.getElementById('visor').innerHTML = ''
 }
+
+function calcular(){
+    x = document.getElementById('visor').innerHTML
+    document.getElementById('visor').innerHTML = eval(x)
+}
